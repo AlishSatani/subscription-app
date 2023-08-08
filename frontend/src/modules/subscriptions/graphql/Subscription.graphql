@@ -1,0 +1,14 @@
+query Subscription($id: UUID!) {
+  subscription(id: $id) {
+    id
+    name
+    subscriptionDetails {
+      nodes {
+        id
+        date
+        startTime
+        endTime
+      }
+    }
+  }
+}

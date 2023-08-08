@@ -1,0 +1,12 @@
+query Users($first: Int, $offset: Int) {
+  users(first: $first, offset: $offset) {
+    nodes {
+      id
+      ...Lite_User
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}

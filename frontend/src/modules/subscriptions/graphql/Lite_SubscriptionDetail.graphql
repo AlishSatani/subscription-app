@@ -1,0 +1,7 @@
+fragment Lite_SubscriptionDetail on SubscriptionDetail {
+  id
+  subscriptionId
+  startTime
+  endTime
+  userId
+}

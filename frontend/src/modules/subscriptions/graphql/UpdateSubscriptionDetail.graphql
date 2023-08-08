@@ -1,0 +1,11 @@
+mutation UpdateSubscriptionDetail(
+  $id: UUID!
+  $subscriptionDetail: SubscriptionDetailPatch!
+) {
+  updateSubscriptionDetail(input: { patch: $subscriptionDetail, id: $id }) {
+    subscriptionDetail {
+      id
+      ...Lite_SubscriptionDetail
+    }
+  }
+}

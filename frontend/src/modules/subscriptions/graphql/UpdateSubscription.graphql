@@ -1,0 +1,8 @@
+mutation UpdateSubscription($id: UUID!, $subscription: SubscriptionPatch!) {
+  updateSubscription(input: { patch: $subscription, id: $id }) {
+    subscription {
+      id
+      name
+    }
+  }
+}

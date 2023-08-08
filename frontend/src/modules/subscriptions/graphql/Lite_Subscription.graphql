@@ -1,0 +1,5 @@
+fragment Lite_Subscription on Subscription {
+  id
+  name
+  userId
+}

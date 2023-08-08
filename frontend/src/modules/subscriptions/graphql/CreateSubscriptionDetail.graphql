@@ -1,0 +1,8 @@
+mutation CreateSubscriptionDetail($input: SubscriptionDetailInput!) {
+  createSubscriptionDetail(input: { subscriptionDetail: $input }) {
+    subscriptionDetail {
+      id
+      ...Lite_SubscriptionDetail
+    }
+  }
+}

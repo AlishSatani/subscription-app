@@ -1,0 +1,5 @@
+mutation DeleteSubscription($id: UUID!) {
+  deleteSubscription(input: { id: $id }) {
+    clientMutationId
+  }
+}

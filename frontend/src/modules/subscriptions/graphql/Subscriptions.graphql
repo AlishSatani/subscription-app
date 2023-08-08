@@ -1,0 +1,12 @@
+query Subscriptions($first: Int, $offset: Int) {
+  subscriptions(first: $first, offset: $offset) {
+    nodes {
+      id
+      name
+    }
+    pageInfo {
+      hasNextPage
+      hasPreviousPage
+    }
+  }
+}

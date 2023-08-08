@@ -1,0 +1,7 @@
+mutation UpdateUser($id: UUID!, $user: UserPatch! ) {
+  updateUser(input: { patch: $user, id: $id }) {
+    user {
+      ...Lite_User
+    }
+  }
+}

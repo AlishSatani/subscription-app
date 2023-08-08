@@ -1,0 +1,6 @@
+query SubscriptionDetail($id: UUID!) {
+  subscriptionDetail(id: $id) {
+    id
+    ...Lite_SubscriptionDetail
+  }
+}
